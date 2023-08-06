@@ -13,13 +13,13 @@ baseRouter.get('/greeting', (req, res) => {
     return res.send('Hello World');
 });
 
+
 baseRouter.post('/add', (req, res) => {
     const num1 = req.body.first;
     const num2 = req.body.second;
     const r = num1 + num2;
     res.status(200).json({"result":r});
 });
-
 
 baseRouter.post('/subtract', (req, res) => {
     const num1 = req.body.first;
